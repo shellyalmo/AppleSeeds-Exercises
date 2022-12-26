@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:description"
+      content="My solution for the Appleseeds exercise on html, number 2.1"
+    />
+    <title>my form</title>
+  </head>
+  <body>
+    <h1>Create an Account</h1>
+    <form action="script.py">
+      <div>
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" name="email" id="email" />
+      </div>
+      <br>
+      <div>
+        <label for="password">Password:</label>
+        <br />
+        <input type="password" name="password" id="password" />
+      </div>
+      <br>
+      <div>
+        <label for="age">Age:</label>
+        <br />
+        <select name="age" id="age">
+          <option value="14-19">14-19</option>
+          <option value="20-29">20-29</option>
+          <option value="30-39">30-39</option>
+          <option value="40-49">40-49</option>
+          <option value="50-59">50-59</option>
+          <option value="60-69">60-69</option>
+          <option value="70-79">70-79</option>
+          <option value="80-89">80-89</option>
+          <option value="90-99">90-99</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="message">Tell us a little about yourself:</label>
+        <br>
+        <textarea name="message" id="message" rows="5" cols="50"></textarea>
+      </div>
+    </form>
+  </body>
+</html>
