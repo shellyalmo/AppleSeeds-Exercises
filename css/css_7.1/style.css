@@ -16,3 +16,40 @@ body{
 .flat-register-btn:hover{
     background: rgb(9, 121, 213)
 }
+
+.round-register-btn{
+    background: rgb(48, 169, 46) ;
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.round-register-btn:hover{
+    background: rgb(39, 141, 38);
+}
+.flat-ghost-register-btn{
+    border-color: rgb(201, 42, 2);
+    background-color: transparent ;
+    color: white;
+    font-size: 28px;
+    padding: 10px 15px;
+}
+
+.flat-ghost-register-btn:hover{
+    background: rgb(201, 42, 2);
+}
+.round-ghost-register-btn{
+    border-color: rgb(235, 205, 12);
+    border-radius: 50px;
+    background-color: transparent ;
+    color: white;
+    font-size: 28px;
+    padding: 10px 15px;
+}
+
+.round-ghost-register-btn:hover{
+    background: rgb(208, 180, 3);
+    
+}
