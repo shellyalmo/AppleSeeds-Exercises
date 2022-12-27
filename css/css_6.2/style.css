@@ -8,6 +8,9 @@ body {
   margin: auto;
   box-sizing: border-box;
 }
+.info-section {
+  width: 60%;
+}
 
 .info-section h1 {
   font-size: 50px;
@@ -49,29 +52,27 @@ body {
   max-width: 60%;
 }
 
- p {
-  font-size: 20px;
+p {
+  font-size: 25px;
 }
 
 #links {
   font-size: 50px;
   line-height: 5rem;
+  float: left;
+  width: 50%;
 }
 
 ul {
   list-style: none;
 }
 
-a{
+a {
   font-size: 40px;
 }
 
-#project-link{
+#project-link {
   float: right;
   padding: 59px;
-}
-
-#links {
-  float: left;
   width: 50%;
 }
