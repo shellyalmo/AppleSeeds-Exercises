@@ -13,6 +13,7 @@ body {
 }
 
 .info-section h1 {
+  padding-top: 100px;
   font-size: 50px;
   text-align: center;
 }
@@ -67,7 +68,7 @@ ul {
   list-style: none;
 }
 
-a {
+.info-section a {
   font-size: 40px;
   color: rgb(22, 77, 7);
 }
@@ -93,7 +94,25 @@ a:active {
 }
 
 .project-btn {
-border: 1px solid black;
+  border: 1px solid black;
 
   border-radius: 12px;
+}
+
+.navbar {
+  list-style: none;
+  width: 100%;
+
+  background: #55575b;
+  border-radius: 5px;
+  overflow: auto;
+  position: fixed;
+}
+li a {
+  color: white;
+  font-size: 35px;
+  padding: 15px 20px;
+}
+.navbar li {
+  float: left;
 }
