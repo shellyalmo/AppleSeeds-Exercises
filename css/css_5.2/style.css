@@ -3,3 +3,11 @@
     background-color: rgb(245, 236, 194);
 }
 
+.card-component img {
+    width: 400px;
+}
+
+#links {
+    color: rgb(120, 120, 22);
+    font-weight: bold;
+}
