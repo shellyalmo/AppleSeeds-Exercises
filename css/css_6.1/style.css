@@ -1,24 +1,29 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box {
+  max-width: 70%;
+  margin: 5px auto;
 }
 
-header, footer{
-    text-align: center;
+header,
+footer {
+  text-align: center;
 }
 
-aside{
-    text-align: left;
-    background-color: green;
+aside {
+  text-align: left;
+  background-color: green;
 }
 
-main{
-    text-align: right;
-    background-color: purple;
+main {
+  text-align: right;
+  background-color: purple;
 }
 
-header{
-    background-color: orange;
+header {
+  background-color: orange;
 }
 footer {
-    background-color: rgba(48, 98, 236, 0.963);
+  background-color: rgba(48, 98, 236, 0.963);
 }
