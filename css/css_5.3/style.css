@@ -1,3 +1,43 @@
 body {
-    font-family: monospace;
+  font-family: "Forum", cursive;
+  font-family: "Open Sans", sans-serif;
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.infoSection h1 {
+  font-size: 60px;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-width: 500px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.cardInfo {
+  padding: 2px 16px;
+}
+.cardInfo h4 {
+    font-size: 30px;
+}
+
+.cardInfo p {
+    color: rgb(19, 113, 53);
+    font-weight: 1000;
+}
+
+#about {
+  max-width: 700px;
+}
+
+.infoSection p {
+  font-size: 24px;
 }

@@ -13,15 +13,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Shelly Almoznino</title>
   </head>
   <body>
     <div class="infoSection" id="intro">
       <h1>Welcome to my website!</h1>
-      <h2>I'm Shelly Almoznino Salaverry,</h2>
-      <h3>a frontend web developer!</h3>
-      <img src="./assets/shelly.jpeg" alt="mypicture" width="200" />
+
+      <div class="card">
+        <div class="cardInfo">
+          <h4><b>Shelly Almoznino Salaverry</b></h4>
+          <p>Frontend Web Developer</p>
+          <img src="./assets/shelly.jpeg" alt="mypicture" style="width: 200" />
+        </div>
+      </div>
     </div>
     <div class="infoSection" id="about">
       <p>
@@ -38,23 +49,25 @@
       </p>
     </div>
     <div class="infoSection" id="links">
-      <ul>
-        <em>You can follow me here:</em>
-        <br />
-        <li>
-          <i class="fa fa-github"></i>
-          <a href="https://github.com/shellyalmo" target="_blank"> Github</a>
-        </li>
-        <li>
-          <i class="fa fa-linkedin-square"></i
-          ><a
-            href="https://www.linkedin.com/in/shelly-almoznino/"
-            target="_blank"
-          >
-            LinkedIn</a
-          >
-        </li>
-      </ul>
+      <div class="card">
+        <ul>
+          <em>You can follow me here:</em>
+          <br />
+          <li>
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/shellyalmo" target="_blank"> Github</a>
+          </li>
+          <li>
+            <i class="fa fa-linkedin-square"></i
+            ><a
+              href="https://www.linkedin.com/in/shelly-almoznino/"
+              target="_blank"
+            >
+              LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
       <button>
         <a href="https://shellyalmo.github.io/weather-app/" target="_blank">
           Check out my first React App</a
