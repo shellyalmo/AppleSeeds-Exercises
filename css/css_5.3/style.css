@@ -4,6 +4,8 @@ body {
   background-image: url(./assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .infoSection h1 {
