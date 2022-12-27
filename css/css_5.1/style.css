@@ -1,0 +1,22 @@
+body {
+  font-family: "Forum", sans-serif;
+}
+
+#first-title {
+  border: 1px solid red;
+  font-size: 30px;
+  border-radius: 40px;
+}
+
+#second-title {
+  /* font-style: italic; */
+  font-weight: 900;
+  font-style: italic;
+}
+
+#third-title {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-family: monospace;
+    box-shadow: 6px 6px 1px rgb(201, 191, 191);
+}
