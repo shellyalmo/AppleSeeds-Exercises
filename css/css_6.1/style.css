@@ -1,24 +1,30 @@
 * {
   box-sizing: border-box;
+  margin: 3px auto;
 }
 .box {
   max-width: 70%;
-  margin: 5px auto;
+  border: 1px solid;
 }
 
 header,
 footer {
   text-align: center;
+  padding: 10px;
 }
 
 aside {
   text-align: left;
   background-color: green;
+  padding: 5px 40px 70px 6px;
 }
 
 main {
   text-align: right;
   background-color: purple;
+  padding: 5px 6px 70px 40px;
+
+
 }
 
 header {
