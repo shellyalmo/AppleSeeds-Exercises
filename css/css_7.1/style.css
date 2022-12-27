@@ -1,0 +1,18 @@
+body{
+   background-color: #2f548c; 
+   color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.flat-register-btn {
+    background: rgb(15, 133, 230) ;
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 10px 15px;
+}
+.flat-register-btn:hover{
+    background: rgb(9, 121, 213)
+}
