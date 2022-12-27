@@ -8,7 +8,7 @@ body {
   margin: auto;
 }
 
-.infoSection h1 {
+.info-section h1 {
   font-size: 133px;
   text-align: center;
 }
@@ -27,18 +27,18 @@ body {
 }
 
 /* Add some padding inside the card container */
-.cardInfo {
+.card-info {
   padding: 2px 16px;
 }
-.cardInfo h4 {
+.card-info h4 {
   font-size: 60px;
 }
 
-.cardInfo img {
+.card-info img {
   width: 767px;
 }
 
-.cardInfo p {
+.card-info p {
   color: rgb(19, 113, 53);
   font-weight: 1000;
   font-size: 60px;
@@ -48,7 +48,15 @@ body {
   max-width: 90%;
 }
 
-.infoSection p {
+.info-section p {
   font-size: 50px;
 }
 
+#links {
+  font-size: 50px;
+  line-height: 5rem;
+}
+
+ul {
+  list-style: none;
+}
