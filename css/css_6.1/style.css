@@ -1,13 +1,14 @@
 * {
-  margin: 3px auto;
   box-sizing: border-box;
 }
 
 body {
   max-width: 70%;
+  margin: auto;
 }
 .box {
   border: 1px solid;
+  margin: 3px auto;
 }
 
 header,
@@ -19,7 +20,7 @@ footer {
 aside {
   text-align: left;
   background-color: green;
-  padding: 5px 40px 70px 6px;
+  padding: 5px 40px 120px 6px;
   float: left;
   width: 30%;
 }
@@ -27,9 +28,9 @@ aside {
 main {
   text-align: right;
   background-color: purple;
-  padding: 5px 6px 70px 40px;
+  padding: 5px 6px 120px 40px;
   float: right;
-  width: 70%;
+  width: 69%;
 }
 
 header {
@@ -37,4 +38,8 @@ header {
 }
 footer {
   background-color: rgba(48, 98, 236, 0.963);
+}
+
+.clr {
+  clear: both;
 }
