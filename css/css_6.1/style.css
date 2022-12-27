@@ -1,9 +1,12 @@
 * {
-  box-sizing: border-box;
   margin: 3px auto;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 70%;
 }
 .box {
-  max-width: 70%;
   border: 1px solid;
 }
 
@@ -17,14 +20,16 @@ aside {
   text-align: left;
   background-color: green;
   padding: 5px 40px 70px 6px;
+  float: left;
+  width: 30%;
 }
 
 main {
   text-align: right;
   background-color: purple;
   padding: 5px 6px 70px 40px;
-
-
+  float: right;
+  width: 70%;
 }
 
 header {
