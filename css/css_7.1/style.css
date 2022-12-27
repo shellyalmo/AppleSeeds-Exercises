@@ -1,55 +1,104 @@
-body{
-   background-color: #2f548c; 
-   color: white;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: auto;
-    text-align: center;
+body {
+  background-color: #2f548c;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  text-align: center;
 }
-
+ button{
+    margin: 4%;
+ }
 .flat-register-btn {
-    background: rgb(15, 133, 230) ;
-    color: white;
-    border: none;
-    font-size: 28px;
-    padding: 10px 15px;
+  background: rgb(15, 133, 230);
+  color: white;
+  border: none;
+  font-size: 28px;
+  padding: 10px 15px;
 }
-.flat-register-btn:hover{
-    background: rgb(9, 121, 213)
-}
-
-.round-register-btn{
-    background: rgb(48, 169, 46) ;
-    color: white;
-    border: none;
-    font-size: 28px;
-    padding: 10px 15px;
-    border-radius: 50px;
+.flat-register-btn:hover {
+  background: rgb(9, 121, 213);
 }
 
-.round-register-btn:hover{
-    background: rgb(39, 141, 38);
-}
-.flat-ghost-register-btn{
-    border-color: rgb(201, 42, 2);
-    background-color: transparent ;
-    color: white;
-    font-size: 28px;
-    padding: 10px 15px;
+.round-register-btn {
+  background: rgb(48, 169, 46);
+  color: white;
+  border: none;
+  font-size: 28px;
+  padding: 10px 15px;
+  border-radius: 50px;
 }
 
-.flat-ghost-register-btn:hover{
-    background: rgb(201, 42, 2);
+.round-register-btn:hover {
+  background: rgb(39, 141, 38);
 }
-.round-ghost-register-btn{
-    border-color: rgb(235, 205, 12);
-    border-radius: 50px;
-    background-color: transparent ;
-    color: white;
-    font-size: 28px;
-    padding: 10px 15px;
+.flat-ghost-register-btn {
+  border-color: rgb(201, 42, 2);
+  background-color: transparent;
+  color: white;
+  font-size: 28px;
+  padding: 10px 15px;
 }
 
-.round-ghost-register-btn:hover{
-    background: rgb(208, 180, 3);
-    
+.flat-ghost-register-btn:hover {
+  background: rgb(201, 42, 2);
+}
+.round-ghost-register-btn {
+  border-color: rgb(235, 205, 12);
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 28px;
+  padding: 10px 15px;
+}
+
+.round-ghost-register-btn:hover {
+  background: rgb(208, 180, 3);
+}
+
+.round-ghost-submit-btn {
+  border-color: rgb(7, 161, 161);
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+.round-ghost-submit-btn:hover {
+  background: rgb(7, 161, 161);
+}
+
+.flat-ghost-submit-btn {
+  border-color: rgb(234, 7, 255);
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.flat-ghost-submit-btn:hover {
+  background: rgb(234, 7, 255);
+}
+
+.round-submit-btn {
+  background: rgb(248, 81, 56);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.round-submit-btn:hover {
+  background: rgb(188, 63, 44);
+}
+
+.flat-submit-btn {
+  background: rgb(217, 207, 25);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+.flat-submit-btn:hover {
+  background: rgb(167, 159, 21);
 }
