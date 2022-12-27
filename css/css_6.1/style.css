@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+header, footer{
+    text-align: center;
+}
+
+aside{
+    text-align: left;
+    background-color: green;
+}
+
+main{
+    text-align: right;
+    background-color: purple;
+}
+
+header{
+    background-color: orange;
+}
+footer {
+    background-color: rgba(48, 98, 236, 0.963);
+}
