@@ -4,12 +4,13 @@ body {
   background-image: url(./assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 53%;
+  max-width: 83%;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .info-section h1 {
-  font-size: 133px;
+  font-size: 50px;
   text-align: center;
 }
 .card {
@@ -17,7 +18,7 @@ body {
   margin-top: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  max-width: 800px;
+  max-width: 529px;
   padding: 10px;
 }
 
@@ -31,25 +32,25 @@ body {
   padding: 2px 16px;
 }
 .card-info h4 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .card-info img {
-  width: 767px;
+  width: 500px;
 }
 
 .card-info p {
   color: rgb(19, 113, 53);
   font-weight: 1000;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 #about {
-  max-width: 90%;
+  max-width: 60%;
 }
 
-.info-section p {
-  font-size: 50px;
+ p {
+  font-size: 20px;
 }
 
 #links {
@@ -59,4 +60,18 @@ body {
 
 ul {
   list-style: none;
+}
+
+a{
+  font-size: 40px;
+}
+
+#project-link{
+  float: right;
+  padding: 59px;
+}
+
+#links {
+  float: left;
+  width: 50%;
 }
