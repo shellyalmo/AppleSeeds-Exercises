@@ -1,0 +1,31 @@
+.box {
+  border: 1px solid black;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+}
+
+.box-one {
+  width: 136px;
+  height: 122px;
+  z-index: 1;
+}
+
+.box-two {
+  width: 100px;
+  height: 108px;
+  top: 73px;
+  left: 77px;
+  z-index: 2;
+}
+.box-three {
+  width: 371px;
+  height: 135px;
+  top: 168px;
+  z-index: 3;
+}
+.box-four {
+  width: 89px;
+  height: 375px;
+  left: 267px;
+  z-index: 4;
+}
