@@ -67,8 +67,8 @@ p {
   color: rgb(0, 0, 0);
 }
 .bg-primary {
-    background: grey;
-    color: green;
+    background: rgba(255, 145, 2, 0.943);
+    color: rgb(26, 77, 136);
 }
 #navbar {
   background: rgb(0, 79, 125);
@@ -145,4 +145,15 @@ p {
 }
 #home-info .info-content p{
     padding-bottom: 30px;
+}
+
+.box{
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i{
+  margin-bottom: 10px;
 }
