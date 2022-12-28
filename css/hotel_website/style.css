@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+}
+
+.text-primary {
+  color: rgb(199, 103, 7);
+}
+
+.lead {
+  font-size: 16px;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  background: rgb(13, 75, 115);
+  padding: 8px 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: rgb(255, 128, 0);
+  background: blanchedalmond;
+}
+
+.btn-light {
+  background: lightblue;
+  color: orange;
+}
+
+.bg-dark {
+  background: rgb(3, 37, 66);
+  color: rgb(255, 255, 255);
+}
+
+.bg-light {
+  background: rgb(246, 238, 238);
+  color: rgb(0, 0, 0);
+}
+.bg-primary {
+    background: grey;
+    color: green;
+}
+#navbar {
+  background: rgb(0, 79, 125);
+  color: white;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+#navbar a {
+  color: white;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: rgb(2, 65, 95);
+  color: rgb(1, 177, 200);
+}
+
+#showcase {
+  background: url(./assets/showcase.jpeg) no-repeat center center/cover;
+  height: 600px;
+}
+
+#showcase .showcase-content {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 40px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 50px;
+  line-height: 0.5em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+}
+
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url("./assets/photo1.jpeg") no-repeat center/cover;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
