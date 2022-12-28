@@ -67,8 +67,12 @@ p {
   color: rgb(0, 0, 0);
 }
 .bg-primary {
-    background: rgba(255, 145, 2, 0.943);
-    color: rgb(26, 77, 136);
+  background: rgba(255, 145, 2, 0.943);
+  color: rgb(26, 77, 136);
+}
+
+.clr{
+  clear: both;
 }
 #navbar {
   background: rgb(0, 79, 125);
@@ -143,17 +147,24 @@ p {
   padding: 50px 30px;
   overflow: hidden;
 }
-#home-info .info-content p{
-    padding-bottom: 30px;
+#home-info .info-content p {
+  padding-bottom: 30px;
 }
 
-.box{
+.box {
   float: left;
   width: 33.3%;
   padding: 50px;
   text-align: center;
 }
 
-.box i{
+.box i {
   margin-bottom: 10px;
+}
+
+#main-footer {
+  text-align: center;
+  background: rgb(6, 92, 132);
+  color: white;
+  padding: 20px;
 }
