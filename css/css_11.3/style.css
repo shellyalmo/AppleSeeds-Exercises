@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(255, 255, 198);
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+}
+.box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+#box1 {
+  background-color: green;
+}
+#box2 {
+  background-color: blue;
+}
+#box3 {
+  background-color: red;
+}
