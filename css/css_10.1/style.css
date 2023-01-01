@@ -1,0 +1,23 @@
+h1{
+    font-size: 20vh;
+}
+h2{
+    font-size: 10vh;
+
+}
+h3{
+    font-size: 5vh;
+}
+
+@media (max-width: 520px){
+    h1 {
+        font-size: 10vh;
+    }
+    h2{
+        font-size: 5vh;
+    
+    }
+    h3{
+        font-size: 2vh;
+    }
+}
