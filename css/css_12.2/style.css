@@ -1,14 +1,21 @@
 .parent-box {
-  background-color: red;
+  background-color: rgb(5, 5, 103);
   width: 50vw;
   height: 50vh;
 }
 
 .parent-box:after {
   content: "";
-  background-color: purple;
+  background-color: red;
   width: 25vw;
   height: 50vh;
   position: absolute;
   z-index: 1;
+}
+
+/* .parent-box:hover{
+  background-color: purple;
+} */
+.parent-box:hover:after{
+  background-color: purple;
 }
