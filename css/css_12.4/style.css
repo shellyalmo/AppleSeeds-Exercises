@@ -1,0 +1,12 @@
+.container{
+    background-color: black;
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: white;
+    
+}
