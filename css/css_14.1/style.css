@@ -2,17 +2,32 @@
   padding: 0;
   margin: 0;
 }
+
 .first-box {
-  background-color: yellow;
-  width: 50vw;
-  height: 50vh;
+  background-color: rgb(121, 205, 230);
+  width: 25vw;
+  height: 25vh;
 }
 
-.first-box::after {
+.first-box::before {
   content: "";
-  background-color: green;
-  width: 50vw;
-  height: 50vh;
+  background-color: rgb(17, 4, 136);
+  width: 25vw;
+  height: 25vh;
   position: absolute;
-  transform: translate(100%);
+}
+
+.first-box:hover::before {
+  animation-name: animate1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animate1 {
+  to {
+    width: 0vw;
+  }
 }
