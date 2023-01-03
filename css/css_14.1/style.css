@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.first-box {
+  background-color: yellow;
+  width: 50vw;
+  height: 50vh;
+}
+
+.first-box::after {
+  content: "";
+  background-color: green;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  transform: translate(100%);
+}
