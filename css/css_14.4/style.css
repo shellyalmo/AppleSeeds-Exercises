@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first {
+  border: 2px solid #7b7676;
+  border-top: 2px solid orange;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin1 2s linear infinite;
+}
+
+.second {
+  border: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid orange;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin2 1s linear infinite;
+}
+.third {
+}
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.third {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  color: orange;
+  animation: third 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+.third::before,
+.third::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.third::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  color: orange;
+  animation: third 1s infinite alternate;
+  animation-delay: 0s;
+}
+.third::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  color: orange;
+  animation: third 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes third {
+  0% {
+    background-color: orange;
+  }
+  50%,
+  100% {
+    background-color: #7b7676;
+  }
+}
+.fourth {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  color: orange;
+  box-shadow: 9999px 0 0 -5px;
+  animation: fourth 1.5s infinite linear;
+  animation-delay: 0.25s;
+}
+.fourth::before,
+.fourth::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  color: orange;
+}
+.fourth::before {
+  box-shadow: 9984px 0 0 -5px;
+  animation: fourth-before 1.5s infinite linear;
+  animation-delay: 0s;
+}
+.fourth::after {
+  box-shadow: 10014px 0 0 -5px;
+  animation: fourth-after 1.5s infinite linear;
+  animation-delay: 0.5s;
+}
+
+@keyframes fourth-before {
+  0% {
+    box-shadow: 9984px 0 0 -5px;
+  }
+  30% {
+    box-shadow: 9984px 0 0 2px;
+  }
+  60%,
+  100% {
+    box-shadow: 9984px 0 0 -5px;
+  }
+}
+@keyframes fourth {
+  0% {
+    box-shadow: 9999px 0 0 -5px;
+  }
+  30% {
+    box-shadow: 9999px 0 0 2px;
+  }
+  60%,
+  100% {
+    box-shadow: 9999px 0 0 -5px;
+  }
+}
+@keyframes fourth-after {
+  0% {
+    box-shadow: 10014px 0 0 -5px;
+  }
+  30% {
+    box-shadow: 10014px 0 0 2px;
+  }
+  60%,
+  100% {
+    box-shadow: 10014px 0 0 -5px;
+  }
+}
