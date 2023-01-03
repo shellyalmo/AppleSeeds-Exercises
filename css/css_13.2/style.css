@@ -9,7 +9,6 @@ html {
 }
 
 body {
-
   font-family: "Open Sans", sans-serif;
 }
 .container {
@@ -24,7 +23,8 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  background: #55575b;
+  --navbar-color: #55575b;
+  background: var(--navbar-color);
   border-radius: 5px;
   overflow: auto;
   position: sticky;
@@ -39,17 +39,14 @@ li a {
   max-width: 200px;
 }
 
-.info-section {
-  /* width: 60%; */
-}
-
 .info-section h1 {
   font-size: 3rem;
   text-align: center;
 }
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 var(--box-shadow-color);
   transition: 0.3s;
   /* max-width: 529px; */
   /* padding: 10px; */
@@ -57,7 +54,7 @@ li a {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 var(--box-shadow-color);
 }
 
 .card-info h2 {
@@ -69,7 +66,8 @@ li a {
 }
 
 .card-info p {
-  color: rgb(19, 113, 53);
+  --card-color: rgb(19, 113, 53);
+  color: var(--card-color);
   font-weight: 1000;
   font-size: 2rem;
   font-weight: 900;
@@ -92,20 +90,12 @@ ul {
 
 .info-section a {
   font-size: 40px;
-  color: rgb(22, 77, 7);
+  --info-section-color: rgb(22, 77, 7);
+  color: var(--info-section-color);
 }
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
+a:link,
+a:visited,
+a:hover,
 a:active {
   text-decoration: none;
 }
