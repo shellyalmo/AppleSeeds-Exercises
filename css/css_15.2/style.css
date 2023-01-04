@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.box {
+  border-radius: 10%;
+  padding: 7rem;
+}
+.box:nth-child(1) {
+  background-color: red;
+  grid-column: 1 / span 4;
+}
+.box:nth-child(2) {
+  background-color: blue;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+.box:nth-child(3) {
+  background-color: green;
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 1;
+}
+.box:nth-child(4) {
+  background-color: purple;
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+}
+.box:last-child {
+  background-color: purple;
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+}
