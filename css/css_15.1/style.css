@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, fr);
+  grid-gap: 1rem;
+}
+
+.box {
+  border-radius: 10%;
+  height: 7rem;
+}
+.box:nth-child(1) {
+  background-color: red;
+  grid-column: 1 / span 2;
+}
+.box:nth-child(2) {
+  background-color: blue;
+  grid-column: 3 / span 2;
+}
+.box:nth-child(3) {
+  background-color: green;
+  grid-column: 1 / span 1;
+}
+.box:nth-child(4) {
+  background-color: purple;
+  grid-column: 2 / span 3;
+}
+.box:last-child {
+  background-color: yellow;
+  grid-column: 1 / span 4;
+}
