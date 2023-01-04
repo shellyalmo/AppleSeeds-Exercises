@@ -3,9 +3,11 @@
   grid-template-areas:
     "header"
     "sidebar1"
-    "content sidebar2"
+    "content"
+    "sidebar2"
     "footer";
-  grid-gap: 1rem;
+  grid-template-columns: repeat(8, 1fr); /* Add this */
+  grid-gap: 3rem;
 }
 
 .container > * {
@@ -14,7 +16,10 @@
   font-size: 3rem;
   padding: 1rem;
   border-radius: 2rem;
+  width: 100%; /* Add this */
+  height: 100%; /* Add this */
 }
+
 .header {
   background-color: red;
   grid-area: header;
@@ -43,18 +48,18 @@
 @media (min-width: 430px) and (max-width: 768px) {
   .container {
     grid-template-areas:
-      "header"
+      "header header"
       "sidebar1 content"
-      "sidebar2"
-      "footer";
+      "sidebar2 sidebar2"
+      "footer footer";
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .container {
     grid-template-areas:
-      "header"
+      "header header header"
       "sidebar1 content sidebar2"
-      "footer";
+      "footer footer footer";
   }
 }
