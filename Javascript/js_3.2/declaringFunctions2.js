@@ -41,8 +41,8 @@ const power = (a) => {
 // const squareRoot = (a) => Math.sqrt(a);
 (function squareRoot(a) {
   return Math.sqrt(a);
-});
+})();
 // const randomNumbers = (a, b) => Math.random() * (a - b) + b;
 (function randomNumbers(a, b) {
   return Math.random() * (a - b) + b;
-});
+})();
