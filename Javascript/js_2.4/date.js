@@ -3,7 +3,7 @@ function datePrinter() {
   const dayOfMonth = new Date().getDate();
   const month = new Date().toLocaleString("default", { month: "long" });
   const year = new Date().getFullYear();
-  console.log(`Today is ${dayOfWeek} the ${dayOfMonth} of ${month} ${year}`);
-  return 1
+  return `Today is ${dayOfWeek} the ${dayOfMonth} of ${month} ${year}`;
+
 }
-datePrinter();
+console.log(datePrinter());
