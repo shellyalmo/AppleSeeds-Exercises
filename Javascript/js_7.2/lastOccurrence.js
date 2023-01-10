@@ -8,4 +8,5 @@ while (i!==-1){
     indices.push(i)
     i=string.indexOf("you",i+1)
 }
-console.log(Math.max.apply(Math, indices))
+// console.log(Math.max.apply(Math, indices))
+console.log(Math.max(...indices))
