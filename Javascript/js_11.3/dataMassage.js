@@ -60,17 +60,22 @@ const old = data.map(function (item) {
 // 3. Create a function that returns an object of all the different
 // foods from all the objects as the key and the number of
 // times that food is present in all the objects as the value.
-const foods = data.map(function (entry) {
-  return { meats: entry.favoriteFoods.meats, fish: entry.favoriteFoods.fish };
-});
+function getFood(arrOfObjects) {
+  let foodOcurrences = {};
+  let foods = [];
+  arrOfObjects.forEach((element) => {
+    foods.push(element.favoriteFoods.meats);
+    foods.push(element.favoriteFoods.fish);
+  });
 
-const meats = [...foods].map(function (food) {
-  return food.meats;
-});
+  foods.flat().map(function (foodItem) {
+    if (foodOcurrences[foodItem] === undefined) {
+      foodOcurrences[foodItem] = 1;
+    } else if (foodOcurrences[foodItem] !== undefined) {
+      foodOcurrences[foodItem]++;
+    }
+  });
+  return foodOcurrences;
+}
 
-const fish = [...foods].map(function (food) {
-  return food.fish;
-});
-// console.log(meats);
-// console.log(fish);
-let numFoods;
+console.log(getFood(data));

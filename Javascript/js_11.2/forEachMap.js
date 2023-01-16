@@ -46,7 +46,7 @@ function vowelCount(string) {
   [...string].forEach((letter) => {
     if (
       realVowels.includes(letter.toLowerCase()) &&
-      vowels[letter.toLowerCase().toLowerCase()] === undefined
+      vowels[letter.toLowerCase()] === undefined
     ) {
       vowels[letter.toLowerCase()] = 1;
     } else if (
