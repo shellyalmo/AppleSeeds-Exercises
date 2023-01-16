@@ -29,8 +29,74 @@ function showFirstAndLast(arr) {
     if (typeof item === "string") {
       firstLastStrings.push(item);
     }
-    return [firstLastStrings[0]];
   });
+  return [firstLastStrings[0], firstLastStrings[firstLastStrings.length - 1]];
 }
-
 console.log(showFirstAndLast([1, "two", "three", 3]));
+
+// 4. Write a function called vowelCount which accepts a string
+// as an argument. The function should return an object
+// which has the count of the number of vowels that are in
+// the string. The key should be the vowel and the value
+// should be the count. e.g. {a:3, o:2,u:4}. Should not be
+// case-sensitive.
+function vowelCount(string) {
+  const realVowels = ["a", "e", "i", "o", "u"];
+  const vowels = {};
+  [...string].forEach((letter) => {
+    if (
+      realVowels.includes(letter.toLowerCase()) &&
+      vowels[letter.toLowerCase().toLowerCase()] === undefined
+    ) {
+      vowels[letter.toLowerCase()] = 1;
+    } else if (
+      realVowels.includes(letter.toLowerCase()) &&
+      vowels[letter.toLowerCase()] !== undefined
+    ) {
+      vowels[letter.toLowerCase()] += 1;
+    }
+  });
+  return vowels;
+}
+console.log(vowelCount("hi I am Shelly"));
+
+// 5. Write a function capitalize that takes a string as an
+// argument and will return the whole string capitalized.
+function capitalizer(string) {
+  const letters = [];
+  [...string].forEach((letter) => {
+    letters.push(letter.toUpperCase());
+  });
+  return letters.join("");
+}
+console.log(capitalizer("hello worlD"));
+
+// 6. Write a function called shiftLetters that takes a string as an argument and return’s an encoded string with each letter
+// shifted down the alphabet by one.
+function shiftLetters(string) {
+  let encoded = "";
+  [...string].forEach((letter) => {
+    let charCode = letter.charCodeAt(letter[0]) - 1;
+    encoded += String.fromCharCode(charCode);
+  });
+  return encoded;
+}
+console.log(shiftLetters("bcd"));
+
+//7. Create a function called swapCase that takes a string as
+// an argument and returns a string that every other word is
+// capitalized. (you can use the fifth’s exercise's function to
+// keep it dry)
+function swapCase(string) {
+  let splitted = string.split(" ");
+  let capitalizedEveryOther = [];
+  splitted.forEach((word, index) => {
+    if (index % 2 === 0) {
+      capitalizedEveryOther.push(capitalizer(word));
+    } else {
+      capitalizedEveryOther.push(word);
+    }
+  });
+  return capitalizedEveryOther.join(" ");
+}
+console.log(swapCase("hi there how are you?"));
