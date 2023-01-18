@@ -43,7 +43,9 @@ function countOnlyVowels(string) {
 // now including the key and value passed to the function
 function addKeyAndValue(arrObj, key, value) {
   const newArr = arrObj.reduce((arr, obj) => {
-    arr.push((obj[key] = value));
+    const newObj = Object.assign(obj, { [key]: value });
+    arr.push(newObj);
+    console.log(arr);
     return arr;
   }, []);
   return newArr;
