@@ -14,10 +14,21 @@ const btnMinus = createHtml("button", "-");
 
 function changeFontSize(button, operator) {
   button.addEventListener("click", function (e) {
-    if (pxCounter > minSize && pxCounter < maxSize) {
+    console.log(pxCounter);
+    if (pxCounter >= minSize && pxCounter <= maxSize) {
       if (operator === "+") {
         pxCounter += 2;
       } else if (operator === "-") {
+        pxCounter -= 2;
+      }
+      p.style.fontSize = `${pxCounter}px`;
+    } else if (pxCounter < minSize) {
+      if (operator === "+") {
+        pxCounter += 2;
+      }
+      p.style.fontSize = `${pxCounter}px`;
+    } else if (pxCounter > minSize) {
+      if (operator === "-") {
         pxCounter -= 2;
       }
       p.style.fontSize = `${pxCounter}px`;
