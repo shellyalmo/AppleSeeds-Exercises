@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  background-color: rgb(155, 194, 181);
+}
+.hidden-letter-box {
+  border: 5px solid black;
+  width: 5vw;
+  font-size: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-message {
+  font-size: 2rem;
+}
+
+#play-again {
+  border: 1px solid green;
+  display: none;
+}
