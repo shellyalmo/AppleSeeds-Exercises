@@ -40,6 +40,12 @@ function AddPosition(htmlElement) {
 function movePlayer(playerNum) {
   removeCurrentPosition(getPositionElement(playerNum, positions[playerNum]));
   AddPosition(findNextPosition(playerNum));
+  if (positions[playerNum] > 11) {
+    // @ts-ignore
+    document.querySelector("#winner").innerText = playerNum;
+    // @ts-ignore
+    document.querySelector("dialog").setAttribute("open", "");
+  }
 }
 
 window.addEventListener("keyup", (e) => {

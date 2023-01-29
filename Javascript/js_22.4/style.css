@@ -39,3 +39,8 @@ td:last-child.active {
 #player2-race td:last-child.active {
   background-image: url(images/player_2.png), url("images/finish.png");
 }
+
+.dialog {
+  width: 30vw;
+  font-size: 2rem;
+}
