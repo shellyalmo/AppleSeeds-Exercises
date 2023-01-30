@@ -6,12 +6,13 @@ function printSuperPower() {
 }
 
 //fix with bind
-const boundPrintSuperPower = printSuperPower.bind(storm);
-boundPrintSuperPower();
+// const boundPrintSuperPower = printSuperPower.bind(storm);
+// boundPrintSuperPower();
+printSuperPower.bind(storm)();
 
 //fix with call or apply
-printSuperPower.call(storm);
+// printSuperPower.call(storm);
 
 // or
 
-printSuperPower.apply(storm);
+// printSuperPower.apply(storm);
