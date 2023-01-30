@@ -2,9 +2,11 @@ import {
   update as updateSnake,
   draw as drawSnake,
   snakeSpeed,
+  getSnakeHead,
+  snakeIntersection,
 } from "./snake.js";
 import { update as updateFood, draw as drawFood } from "./food.js";
-
+import { outsideGrid } from "./grid.js";
 //how long it has been since we last rerendered
 let lastRenderTime = 0;
 let gameOver = false;
@@ -13,7 +15,10 @@ const gameBoard = document.getElementById("game-board");
 //game loop
 function main(currentTime) {
   if (gameOver) {
-    return alert("you lose");
+    if (confirm("you lost. Press ok to restart")) {
+      window.location.reload();
+    }
+    return;
   }
   window.requestAnimationFrame(main);
   const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000;
