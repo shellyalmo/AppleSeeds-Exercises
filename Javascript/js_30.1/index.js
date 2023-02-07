@@ -36,18 +36,21 @@ const shelly = {
 };
 
 document.querySelector("#submit-btn").addEventListener("click", getProfile);
-
 async function getProfile() {
-  const inputValue = document.querySelector("input").value;
-  let response = await fetch(`https://api.github.com/users/${inputValue}`);
-  // let response = shelly;
-  let data = await response.json();
-  document
-    .querySelector(".avatar-image")
-    .setAttribute("src", `${data.avatar_url}`);
-  document.querySelector(".user-name").innerText = data.login;
-  document.querySelector(".num-repos").innerText = data.public_repos;
-  document
-    .querySelector("#github-link")
-    .setAttribute("href", `https://github.com/${inputValue}`);
+  try {
+    const inputValue = document.querySelector("input").value;
+    let response = await fetch(`https://api.githu.com/users/${inputValue}`);
+    // let response = shelly;
+    let data = await response.json();
+    document
+      .querySelector(".avatar-image")
+      .setAttribute("src", `${data.avatar_url}`);
+    document.querySelector(".user-name").innerText = data.login;
+    document.querySelector(".num-repos").innerText = data.public_repos;
+    document
+      .querySelector("#github-link")
+      .setAttribute("href", `https://github.com/${inputValue}`);
+  } catch (error) {
+    console.error(error);
+  }
 }

@@ -1,11 +1,17 @@
 document.getElementById("get-joke").addEventListener("click", getJoke);
 
 async function getJoke() {
-  let response = await fetch("https://api.jokes.one/jod");
-  // let response = await mockFetch("https://api.jokes.one/jod");
-  let data = await response.json();
-  document.getElementById("output").innerText =
-    data.contents.jokes[0].joke.title + data.contents.jokes[0].joke.text;
+  try {
+    let response = await fetch("https://api.jokes.one/jod");
+    // console.log(response);
+    // let response = await mockFetch("https://api.jokes.one/jod");
+    let data = await response.json();
+    console.log(data);
+    document.getElementById("output").innerText =
+      data.contents.jokes[0].joke.title + data.contents.jokes[0].joke.text;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 function mockFetch(url) {
