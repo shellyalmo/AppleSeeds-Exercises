@@ -1,3 +1,5 @@
+import { apiKey } from "./apiKey.js";
+
 const movie = {
   Title: "Titanic",
   Year: "1997",
