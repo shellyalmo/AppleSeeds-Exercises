@@ -36,7 +36,7 @@ document.querySelector("#submit-btn").addEventListener("click", getProfile);
 async function getProfile() {
   const inputValue = document.querySelector("input").value;
   let response = await fetch(
-    `https://www.omdbapi.com/?t=${inputValue}&apikey=b4c7f05f`
+    `https://www.omdbapi.com/?t=${inputValue}&apikey=${apiKey}`
   );
   // let response = movie;
   let data = await response.json();
