@@ -187,7 +187,7 @@ const anyCooks = data.some((person) => person.hobbies.includes("cooking"));
 // console.log(anyCooks);
 
 // Exercise 2: Use the some method to check if any of the people in the data array live in California
-const anyCalifornians = data.some((person) => (person.address.state = "CA"));
+const anyCalifornians = data.some((person) => person.address.state === "CA");
 // console.log(anyCalifornians);
 
 // Exercise 3: Use the some method to check if any of the friends of each person in the data array are older than 30
@@ -231,6 +231,7 @@ const totalAges = data.reduce((acc, person) => acc + person.age, 0);
 // console.log(totalAges);
 
 // Exercise 2: Use the reduce method to get the number of people who live in each state
+console.log(data);
 const howManyInState = data.reduce((acc, person) => {
   const state = person.address.state;
   if (acc[state] === undefined) {
