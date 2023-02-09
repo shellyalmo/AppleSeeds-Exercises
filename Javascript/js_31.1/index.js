@@ -22,7 +22,7 @@ async function getPlanet(url) {
 async function getPeople() {
   try {
     let people = await Promise.all(
-      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(getPerson)
+      Array.from({ length: 10 }, (_, i) => i + 1).map(getPerson)
     );
     console.log(people);
     let planets = await Promise.all(
