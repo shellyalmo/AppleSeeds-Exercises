@@ -18,13 +18,14 @@ const addUser = function (name, email) {
 };
 
 const updateUser = function (id, name, email) {
-  const users = loadUsers();
-  const userToUpdate = users.find((user) => user.id === id);
-
-  userToUpdate.name = name;
-  userToUpdate.email = email;
+  const newUser = {
+    id,
+    name,
+    email,
+  };
   removeUser(id);
-  users.push(userToUpdate);
+  const users = loadUsers();
+  users.push(newUser);
   saveUsers(users);
 };
 

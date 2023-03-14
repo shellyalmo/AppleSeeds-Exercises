@@ -11,7 +11,9 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\users\\app.js"
+            "cwd": "${workspaceFolder}\\users",
+            "program": "${workspaceFolder}\\users\\app.js",
+            "args": ["update", "--id=\"pw3to5kclf8mxsre\"", "--name=\"John2\"", "--email=\"user2@gmail.com\""]
         }
     ]
 }

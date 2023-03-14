@@ -60,6 +60,13 @@ yargs.command({
 yargs.command({
   command: "update",
   describe: "Update a user",
+  builder: {
+    id: {
+      describe: "user id",
+      demandOption: true,
+      type: "string",
+    },
+  },
   handler: function (argv) {
     users.updateUser(argv.id, argv.name, argv.email);
   },
