@@ -51,8 +51,8 @@ yargs.command({
 yargs.command({
   command: "read",
   describe: "Read a user",
-  handler: function () {
-    console.log("Reading a user");
+  handler: function (argv) {
+    console.log(users.readUsers(argv.id));
   },
 });
 

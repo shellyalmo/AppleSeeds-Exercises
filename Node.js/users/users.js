@@ -52,9 +52,18 @@ const loadUsers = function () {
   }
 };
 
+const readUsers = function (id) {
+  const users = loadUsers();
+  const userToRead = users.filter((user) => {
+    return user.id === id;
+  });
+  return userToRead;
+};
+
 module.exports = {
   getUsers,
   addUser,
   removeUser,
   updateUser,
+  readUsers,
 };
