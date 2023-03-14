@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "uniqid": "^5.4.0",
+    "yargs": "^17.7.1"
+  }
+}
