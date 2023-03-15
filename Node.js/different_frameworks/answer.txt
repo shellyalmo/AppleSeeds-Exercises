@@ -1,0 +1,10 @@
+What other frameworks are there similar to express? What are the pros and
+cons?
+
+https://www.toptal.com/nodejs/nodejs-frameworks-comparison
+
+    Express: pros- fast, simple, easy to learn, cons - hard to maintain, error prone with database crud actions since there is no one consensus
+
+    Koa: pros- middleware less, lightweight, no need for callback, ES6 generator, cons - harder to debug
+
+    Meteor: pros-  data synchronization mechanism, using WebSocket to connect client, highly automated framework. cons -Meteor usually consumes much more server hardware and bandwidth resources. 
