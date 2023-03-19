@@ -1,27 +1,42 @@
 import express from "express";
 import dotenv from "dotenv";
+import axios from "axios";
 
 dotenv.config({ path: "./config/config.env" });
 
 const app = express();
 
+// Constants for API endpoint and header values
+const XR_API_KEY = process.env.XRAPID_API_KEY;
+const XR_API_HOST = process.env.XR_API_HOST;
+
 app.get("/", (req, res) => res.send("Server running"));
 
-const people = [
-  { id: 1, name: "John Doe" },
-  { id: 2, name: "Jane Smith" },
-  { id: 3, name: "Michael Brown" },
-  { id: 4, name: "Emily Johnson" },
-  { id: 5, name: "David Jones" },
-  { id: 6, name: "Sarah Davis" },
-  { id: 7, name: "Kevin Wilson" },
-  { id: 8, name: "Laura Taylor" },
-  { id: 9, name: "Richard Williams" },
-  { id: 10, name: "Emma White" },
-];
+app.get("/api/weather", async (req, res) => {
+  const { location } = req.query;
 
-app.get("/api/people", (req, res) => {
-  res.json(people);
+  if (!location || location.trim() === "") {
+    return res.status(400).send("Invalid or missing location parameter");
+  }
+
+  const options = {
+    method: "GET",
+    url: "https://weatherapi-com.p.rapidapi.com/current.json",
+    params: { q: location },
+    headers: {
+      "X-RapidAPI-Key": "2b0fe4d5efmshe6ee64f7d20f879p1677b5jsn4513724cf147",
+      "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
+    },
+  };
+
+  try {
+    const response = await axios.request(options);
+    const weatherData = response.data;
+    res.json(weatherData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error fetching weather data");
+  }
 });
 
 const PORT = process.env.PORT || 5000;
